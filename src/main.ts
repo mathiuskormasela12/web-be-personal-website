@@ -1,7 +1,10 @@
 // ========== Main
+// import all packages
+import App from './core/App'
 
-export function main (): string {
-  return 'Hello World'
+export function main (): void {
+  const app = new App()
+  app.listen()
 }
 
-console.log(main())
+main()
